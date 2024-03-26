@@ -24,8 +24,10 @@ public class FilterChain {
         httpSecurity.csrf(x-> x.disable())
                 .authorizeHttpRequests(
                         x-> x.requestMatchers("/healthcheck").authenticated().
-                                requestMatchers("/login")
-                                .permitAll()
+                                requestMatchers("/login").permitAll()
+                                .requestMatchers("/register").permitAll()
+                                .requestMatchers("/getUserDetails").permitAll()
+                                .requestMatchers("/getdb2").permitAll()
                                 .anyRequest().authenticated()
                 )
                 .exceptionHandling(x-> x.authenticationEntryPoint(entryPoint))

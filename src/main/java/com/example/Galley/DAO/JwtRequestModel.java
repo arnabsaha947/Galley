@@ -1,4 +1,4 @@
-package com.example.Galley.Model;
+package com.example.Galley.DAO;
 
 public class JwtRequestModel {
 

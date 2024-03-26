@@ -1,7 +1,7 @@
 package com.example.Galley.Controller;
 
-import com.example.Galley.Model.JwtRequestModel;
-import com.example.Galley.Model.JwtResponseModel;
+import com.example.Galley.DAO.JwtRequestModel;
+import com.example.Galley.DAO.JwtResponseModel;
 import com.example.Galley.Utility.JwtHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
